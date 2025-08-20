@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/ishita mishra/Downloads/archive (1)/PS_20174392719_1491204439457_log.csv")
+    df = pd.read_csv("fraud_sample.csv")
     return df
 
 df = load_data()
@@ -136,3 +136,4 @@ flagged_count = df["isFlaggedFraud"].sum()
 st.metric("Actual Fraud Cases", fraud_count)
 st.metric("Flagged Fraud Cases", flagged_count)
 st.write("👉 The system flags very few frauds compared to actual fraud cases.")
+
