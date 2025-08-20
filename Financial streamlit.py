@@ -137,3 +137,32 @@ st.metric("Actual Fraud Cases", fraud_count)
 st.metric("Flagged Fraud Cases", flagged_count)
 st.write("👉 The system flags very few frauds compared to actual fraud cases.")
 
+# ---------------------------
+# Conclusion & Insights
+# ---------------------------
+
+st.subheader("📌 Conclusion & Insights")
+
+
+st.markdown("""
+    **1. Fraud is Rare but Critical**  
+    - Less than **0.2% of transactions are fraudulent**, but even these few cases can lead to **huge financial losses**.  
+
+    **2. Fraud Happens Mostly in High-Value Transactions**  
+    - Fraudulent transactions often involve **very large amounts of money** compared to normal transactions.  
+
+    **3. Transaction Type Matters**  
+    - **CASH_OUT and TRANSFER** are the most common fraud transaction types.  
+    - Other types (PAYMENT, DEBIT) rarely show fraud.  
+
+    **4. Balance Behavior Patterns**  
+    - Fraud transactions often show **impossible balance differences**, e.g., destination balance not increasing.  
+
+    **5. Heatmap Correlation**  
+    - Strong correlation between **amount, old balance, and new balance** indicates fraud disrupts normal patterns.  
+
+    **6. Business Impact**  
+    - Even though fraud cases are rare, the **financial risk is very high**.  
+    - Preventing just a few fraud cases can save organizations **millions**.  
+    """)
+
